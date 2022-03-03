@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fbf8f4;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Reusable classes */
+
+h2 {
+  font-size: 45px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+p {
+  color: gray;
+}
+
+span {
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+ul,
+hr {
+  margin-bottom: 1em;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.price__plan__container,
+.chirp__features,
+.chirp__customers,
+.price__plan__container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.footer__section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.twitter-btn {
+  background-color: #00acee;
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 12px;
+  width: fit-content;
+}
+
+.twitter-btn > img {
+  margin-right: 10px;
+  max-width: 21px;
+}
+
+/* Nav */
+.primary-header {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.primary-navigation {
+  list-style: none;
+  margin-inline-end: 1.5em;
+  padding: 0;
+}
+.logo {
+  color: #00acee;
+  font-weight: bold;
+}
+
+/* Section */
+.hero {
+  background-color: #fbf8f4;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  min-height: 100vh;
+}
+
+.hero-container {
+  margin-bottom: 50px;
+}
+
+.img-box img {
+  width: 100%;
+  float: right;
+  margin-right: 1.5em;
+}
+
+.text-box {
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  margin-bottom: 0.4em;
+  line-height: 1;
+}
+
+.text-box p {
+  margin-bottom: 0.9em;
+  font-size: 17px;
+}
+
+.cta span {
+  padding: 8px 8px;
+  margin-top: 0.2em;
+}
+
+.text-box .users {
+  margin-top: 1em;
+  display: flex;
+  overflow: hidden;
+  padding-left: 0.5em;
+}
+
+.users img {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  margin-right: 0;
+  margin-left: -1.2rem;
+}
+
+.text-box p {
+  margin-top: 1em;
+}
+
+/* features */
+
+.features {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.features h2 {
+  font-size: 35px;
+  padding-top: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+.chirp__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 60px;
+}
+
+.feature {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.feature__content {
+  margin: 1.5em;
+}
+
+.feature__image {
+  width: 35px;
+  margin-bottom: 0.5em;
+}
+
+.sun {
+  font-size: 35px;
+  margin-bottom: 0.2em;
+}
+
+.feature__title {
+  margin-bottom: 0.5em;
+}
+
+.feature__description {
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Customers */
+
+.customers {
+  background-color: #d7f5f5;
+}
+
+.customers__title {
+  padding-top: 1.2em;
+  margin-bottom: 0.8em;
+}
+.chirp__customers {
+  column-gap: 40px;
+}
+
+.customer {
+  background: #fbf8f4;
+  border-radius: 5px;
+  align-self: baseline;
+}
+
+.customer__tweet {
+  margin: 1.2em;
+}
+
+.twitter__user {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.twitter__user .user__information {
+  display: flex;
+}
+
+.user__name {
+  margin-left: 0.5em;
+}
+
+.user__name p {
+  font-size: 13px;
+}
+
+.tweet {
+  max-width: 270px;
+  margin-bottom: 1em;
+}
+
+.engagements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.likes img {
+  width: 15px;
+}
+
+.likes p {
+  margin-left: -8px;
+  font-size: 16px;
+}
+
+.date p {
+  font-size: 16px;
+}
+
+/* Price Plan */
+
+.price__plan {
+  background: white;
+}
+
+.plan__desc {
+  text-align: center;
+}
+
+.plan__desc h3 {
+  font-size: 35px;
+  margin-bottom: 0.5em;
+}
+
+.plan {
+  min-width: 40%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  border: 2px solid goldenrod;
+  border-radius: 8px;
+  background: #fbf8f4;
+}
+
+.subscription {
+  margin: 1.2em;
+}
+
+.subscription span {
+  font-size: 18px;
+  color: grey;
+}
+
+.subscription ul li {
+  color: grey;
+  list-style-image: url(Checkmark.svg);
+  line-height: 2;
+  font-size: 16px;
+  margin-left: 1em;
+}
+
+.trail {
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  min-height: 6vh;
+  background-color: #d7f5f5;
+}
+
+.footer__section {
+  justify-content: space-between;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  .primary-navigation {
+    z-index: 1000;
+    position: fixed;
+    gap: 3em;
+    text-align: center;
+    inset: 6% 2% 45% 5%;
+    flex-direction: column;
+    padding: min(30vh, 5rem) 1rem;
+    background-color: #fbf8f4;
+    border-radius: 6px;
+    border: 1PX SOLID black;
+    transform: translateX(110%);
+    transition: ease-in-out .5s;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: url(menu.svg);
+    border: none;
+    top: 0.5rem;
+    right: 1rem;
+    z-index: 9999;
+  }
+
+  .container {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+  }
+
+  .grid,
+  .chirp__customers,
+  .chirp__features,
+  .grid-3-cols {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-box {
+    margin-left: 1.5em;
+  }
+
+  .text-box h1 {
+    font-size: 40px;
+    margin-bottom: 0.4em;
+    line-height: 1;
+  }
+
+  .customer {
+    margin-bottom: 2em;
+    margin-left: 2.5em;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero__container {
+    margin-left: 1.2em;
+  }
+
+  .chirp__features,
+  .grid-3-cols {
+    display: flex;
+    flex-direction: column;
+  }
+}
